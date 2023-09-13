@@ -72,7 +72,7 @@ def sanitize():
                     response[k] = sanitized_data
                 elif not override:
                     response[k] = sanitized_data
-        print(response)
+        print(json.dumps(response))
 
 
 
