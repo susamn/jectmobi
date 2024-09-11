@@ -1,12 +1,22 @@
 # jectmobi
 
+## Implementation Time
+1 hour 30 minutes
+
 ## Execution
 
 ### Run
 
 
 #### Local
-For running the project we need to have go language installed in the host machine and available in the path.
+
+##### Requirements
+
+Go (version 1.13 or higher recommended)
+
+- Clone this repository to local machine.
+- Navigate to the project directory.
+- Run the program using the following command:
 
 ```sh
   go mod tidy
@@ -14,7 +24,13 @@ For running the project we need to have go language installed in the host machin
 ```
 Here the command *go mod tidy* installs any libs necessary for the project to build. We are not using any third party library here. Only standard libs bundled with golang is used.
 
-Finally *go run main.go* runs the code. The input json is embedded in the code inside the main function.
+The program will process the hardcoded JSON string in the main function and output the transformed JSON to the console.
 
-#### ReplIt
-For replit import we need to import the github repo from the replit console and run the main.go file.
+#### Replit Setup and Execution Instructions
+
+- Go to Replit and create a new repl.
+- Choose "Go" as the language.
+- In the "Import from GitHub" field, paste the URL of this GitHub repository.
+- Once the repl is created, we should see the main.go file in the file explorer.
+- We can directly run the code by clicking on Run or in shell:
+  ``` go run main.go```
