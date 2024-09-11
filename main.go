@@ -108,7 +108,6 @@ func fillup(key string, val interface{}, obj map[string]interface{}) {
 		sanitizedBool := mapData.(map[string]interface{})
 		newObj := make(map[string]interface{})
 		for key, val := range sanitizedBool {
-			// Remove keys with empty string
 			if trim(key) != "" {
 				fillup(key, val, newObj)
 			}
@@ -207,4 +206,3 @@ func sanitizeKeys(val map[string]interface{}) map[string]interface{} {
 	}
 	return response
 }
-
